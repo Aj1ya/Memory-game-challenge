@@ -1,4 +1,5 @@
 // use strict es6;
+
 var selectGame = []; 
     var btnNumbers = $("#numbers");
     var btnIcons = $('#icons');
