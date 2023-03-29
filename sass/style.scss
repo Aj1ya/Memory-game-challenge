@@ -79,6 +79,21 @@ body{
         width: 550px;
         height: 550px;
         border-radius: 20px;
+        &.hide{
+            display: none;
+        }
+        &.icons, &.numbers{
+            display: none;
+            &.show{
+                display: block;
+                h2{
+                    color: var(--darkblue);
+                    text-align: center;
+                    margin-top: 1rem;
+                }
+            }
+        }
+        
         .content-top{
             padding-top: 3rem;
         }
@@ -112,6 +127,10 @@ body{
                     width: 100%;
                     background-color: var(--orange);
                     padding: 1rem 1.25rem;
+                    transition: 500ms all ease-in-out;
+                    &:hover{
+                        background-color: var(--darkblue) !important;
+                    }
                 }
             }
             

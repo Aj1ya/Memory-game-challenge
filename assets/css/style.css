@@ -92,6 +92,24 @@ body {
   border-radius: 20px;
 }
 
+.start-game .game-board.hide {
+  display: none;
+}
+
+.start-game .game-board.icons, .start-game .game-board.numbers {
+  display: none;
+}
+
+.start-game .game-board.icons.show, .start-game .game-board.numbers.show {
+  display: block;
+}
+
+.start-game .game-board.icons.show h2, .start-game .game-board.numbers.show h2 {
+  color: var(--darkblue);
+  text-align: center;
+  margin-top: 1rem;
+}
+
 .start-game .game-board .content-top {
   padding-top: 3rem;
 }
@@ -140,5 +158,11 @@ body {
   width: 100%;
   background-color: var(--orange);
   padding: 1rem 1.25rem;
+  -webkit-transition: 500ms all ease-in-out;
+  transition: 500ms all ease-in-out;
+}
+
+.start-game .game-board .game-board-content .select-theme-buttons .start-game-btn:hover {
+  background-color: var(--darkblue) !important;
 }
 /*# sourceMappingURL=style.css.map */
